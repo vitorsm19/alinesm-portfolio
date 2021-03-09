@@ -9033,30 +9033,3 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
-.grdnt-mds:not(.overly) {
-	background-image: -webkit-linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
-	background-image: linear-gradient(45deg, #850925 0%, #ff2d43 50%, #ff2d43 50%, #850925 100%);
-}
-.grdnt-mds.overly:before {
-	background-image: -webkit-linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
-	background-image: linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
-}
-@font-face{
-  font-family: Edmondsans;
-  src: "assets/fonts/edmondsansbold.ttf";
-}
-
-.h2{
-  font-family: 'Edmondsans'!important;
-}
-
-
-.grdnt-two:not(.overly) {
-	background-image: -webkit-linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
-	background-image: linear-gradient(45deg, #314264 0%, #3d63a1 50%, #3d63a1 50%, #314264 100%);
-}
-.grdnt-two.overly:before {
-	background-image: -webkit-linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
-  background-image: linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
-}

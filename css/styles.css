@@ -10141,8 +10141,10 @@ localizar
   }
 }
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: calc(2.5rem + 74px);
+  padding-bottom: 0px !important;
+  margin:0px !important;
+  
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10155,19 +10157,6 @@ localizar
   width: 15rem;
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 10px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
-  }
-}
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -10275,14 +10264,6 @@ form .row:first-child .floating-label-form-group {
   justify-content: center;
   align-items: center
 }
-.btn-circle.btn-xl { 
-  width: 50px; 
-  height: 50px; 
-  padding: 10px 16px; 
-  border-radius: 35px; 
-  font-size: 12px; 
-  text-align: center; 
-} 
 
 .no-margin{
   margin:0px!important;
@@ -10290,4 +10271,96 @@ form .row:first-child .floating-label-form-group {
 
 .no-padding{
   padding:0px!important;
+}
+
+.grdnt-prof:not(.overly) {
+	background-image: linear-gradient(45deg, #850925 0%, #ff2d43 50%, #ff2d43 50%, #850925 100%);
+}
+
+.grdnt-prof.overly:before {
+	background-image: linear-gradient(45deg, #850925 0%, #ff2d43 50%, #ff2d43 50%, #850925 100%);
+}
+
+@font-face{
+  font-family: Edmondsans;
+  src:url(/assets/fonts/edmondsansbold.ttf);
+}
+
+@font-face{
+  font-family: Helvetica-Neue;
+  src:url(/assets/fonts/helvetica-neue.ttf)
+}
+
+.h2{
+  font-family: Edmondsans !important;
+}
+
+.grdnt-form:not(.overly) {
+	background-image: linear-gradient(45deg, #314264 0%, #3d63a1 50%, #3d63a1 50%, #314264 100%);
+}
+.grdnt-form.overly:before {
+  background-image: linear-gradient(45deg, #00416d 0%, #3addbe 51%, #00416d 100%);
+}
+
+.main-profile{
+  padding: 100px 0px 50px 0px;
+  text-align: center;
+}
+
+.main-form{
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+.btn-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+ 
+.habtitle, .formtitle{
+  color: white;
+  font-family: Helvetica-Neue !important; 
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: #000 2px 2px 1px;
+}
+
+.habdesc, .formdesc{
+  color: white;
+  font-family: Helvetica-Neue !important; 
+  font-weight: 550;
+}
+
+.lefthab > .hab > .desc {
+padding: 0px 15px 0px 0px !important;
+}
+
+.righthab > .hab > .desc {
+  padding: 0px 0px 0px 15px !important;
+}
+
+.grdnt-black:not(.overly) {
+	background-image: linear-gradient(45deg, #000000 0%, #333333 50%, #333333 50%, #000000 100%);
+}
+
+.grdnt-black.overly:before {
+  background-image: linear-gradient(45deg, #000000 0%, #333333 50%, #333333 50%, #000000 100%)
+}
+
+.hab{
+  margin-bottom: 25px !important;
+}
+
+.grdnt-proj:not(.overly) {
+	background-image: linear-gradient(45deg, #090349 0%, #132a4e 50%, #132a4e 50%, #090349 100%);
+}
+
+.grdnt-proj.overly:before {
+  background-image: linear-gradient(45deg, #090349 0%, #132a4e 50%, #132a4e 50%, #090349 100%);
+}
+
+.form {
+  padding-top: 20px !important; 
 }
