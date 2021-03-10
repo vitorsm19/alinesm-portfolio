@@ -10307,7 +10307,7 @@ form .row:first-child .floating-label-form-group {
   text-align: center;
 }
 
-.main-form{
+.main-form, .main-proj{
   padding: 50px 0px 50px 0px;
   text-align: center;
 }
@@ -10353,6 +10353,10 @@ padding: 0px 15px 0px 0px !important;
   margin-bottom: 25px !important;
 }
 
+.form {
+  padding-top: 20px !important; 
+}
+
 .grdnt-proj:not(.overly) {
 	background-image: linear-gradient(45deg, #090349 0%, #132a4e 50%, #132a4e 50%, #090349 100%);
 }
@@ -10361,6 +10365,52 @@ padding: 0px 15px 0px 0px !important;
   background-image: linear-gradient(45deg, #090349 0%, #132a4e 50%, #132a4e 50%, #090349 100%);
 }
 
-.form {
-  padding-top: 20px !important; 
+.img-proj {
+  max-height: 400px;
+}
+
+.swiper-slide{
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hidden-md{
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm{
+    display: none !important;
+  }
+  .lefthab{
+    margin-top: 30px !important;
+  }
+  .main-profile {
+    padding: 75px 20px 15px 20px !important;
+  }
+  .main-form, .main-proj {
+    padding: 40px 0px 40px 0px;
+  }
+  .btn-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .habtitle, .formtitle{
+    font-size: 20px !important;
+  }
+  .habdesc, .formdesc{
+    font-size: 14px !important;
+  }
+  .lefthab > .hab > .desc {
+    padding: 0px 15px 0px 0px !important;
+    }
+   .righthab > .hab > .desc {
+      padding: 0px 0px 0px 25px !important;
+    }
+    .curso > .dzngraf, .curso > .arqurb {
+      padding-bottom: 25px !important;
+    }
 }
