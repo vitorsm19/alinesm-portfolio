@@ -10373,6 +10373,28 @@ padding: 0px 15px 0px 0px !important;
   text-align: center;
 }
 
+.proj{
+  margin: 0px 0px 30px 0px !important;
+}
+
+.proj-title{
+  color: white;
+}
+.proj-desc{
+  color:white;
+}
+
+.anima{
+  opacity: 0;
+  transform: translate3D(-100px,0,0);
+  transition: .3s;
+}
+
+.anima-start{
+  opacity: 1;
+  transform: translate3D(0,0,0)
+}
+
 @media (min-width: 768px) {
   .hidden-md{
     display: none !important;
@@ -10404,6 +10426,14 @@ padding: 0px 15px 0px 0px !important;
   .habdesc, .formdesc{
     font-size: 14px !important;
   }
+  .proj-title{
+    color: white;
+    font-size: 20px !important;
+  }
+  .proj-desc{
+    color:white;
+    font-size: 14px !important;
+  }
   .lefthab > .hab > .desc {
     padding: 0px 15px 0px 0px !important;
     }
@@ -10414,3 +10444,4 @@ padding: 0px 15px 0px 0px !important;
       padding-bottom: 25px !important;
     }
 }
+
