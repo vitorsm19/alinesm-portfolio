@@ -10457,7 +10457,10 @@ padding: 0px 15px 0px 0px !important;
     background-color: #171717;
   }
   .masthead-avatar{
-    padding-top:25px;
+  
+  }
+  #mainNav {
+    padding-top: 0px;
   }
   .lefthab {
     padding:0px 10px 0px 0px !important;
@@ -10476,7 +10479,7 @@ height:100px !important;
     }
     @media (max-width: 991px) {
       nav {
-        height: 100px !important;
+        height: 80px !important;
       }
     }
 }
