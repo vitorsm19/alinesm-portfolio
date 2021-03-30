@@ -10140,6 +10140,15 @@ localizar
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+  .cellprofile:hover,
+.hab:hover,
+.dzngraf:hover,
+.arqurb:hover,
+.dznmov:hover
+{
+  transform: scale(1.15);
+  transition: all 1.3s;
+}
 }
 .masthead {
   padding-top: calc(2.5rem + 74px);
@@ -10313,16 +10322,6 @@ form .row:first-child .floating-label-form-group {
   text-align: center;
 }
 
-.cellprofile:hover,
-.hab:hover,
-.dzngraf:hover,
-.arqurb:hover,
-.dznmov:hover
-{
-  transform: scale(1.15);
-  transition: all 1.3s;
-}
-
 .cellprofile,
 .hab,
 .dzngraf,
@@ -10331,7 +10330,6 @@ form .row:first-child .floating-label-form-group {
 {
   
 }
-
 
 .btn-circle {
   width: 90px;
@@ -10461,7 +10459,9 @@ padding: 0px 15px 0px 0px !important;
   .masthead-avatar{
     padding-top:25px;
   }
-  
+  .lefthab {
+    padding:0px 10px 0px 0px !important;
+  }
   .lefthab > .hab > .desc {
     padding: 0px 15px 0px 0px !important;
     }
