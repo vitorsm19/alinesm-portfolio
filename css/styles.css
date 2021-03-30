@@ -10458,6 +10458,9 @@ padding: 0px 15px 0px 0px !important;
   .container > .navbar-collapse {
     background-color: #171717;
   }
+  .masthead-avatar{
+    padding-top:25px;
+  }
   
   .lefthab > .hab > .desc {
     padding: 0px 15px 0px 0px !important;
