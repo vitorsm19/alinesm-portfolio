@@ -10330,8 +10330,6 @@ form .row:first-child .floating-label-form-group {
   text-align: center;
 }
 
-
-
 .btn-circle {
   width: 90px;
   height: 90px;
@@ -10342,16 +10340,21 @@ form .row:first-child .floating-label-form-group {
 .habtitle, .formtitle{
   color: white;
   letter-spacing: 1.5px;
-  text-shadow: #000 1px 2px 1px;
 }
 
 .habdesc, .formdesc{
   color: white;
-
+}
+ 
+.cellprofile {
+  height: 520px!important;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-container{
   align-items: center;
+  height: 530px!important;
 }
 
 .lefthab > .hab > .desc {
@@ -10360,6 +10363,17 @@ padding: 0px 15px 0px 0px !important;
 
 .righthab > .hab > .desc {
   padding: 0px 0px 0px 15px !important;
+}
+
+.lefthab, .righthab {
+  height: 420px !important;
+}
+
+.curso{
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 210px!important;
 }
 
 .grdnt-black:not(.overly) {
