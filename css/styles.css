@@ -10478,7 +10478,10 @@ height:100px !important;
     }
     @media (max-width: 991px) {
       nav {
-        height: 80px !important;
+        height: 85px !important;
+      }
+      .navbar-brand {
+padding-top: 16px !important;
       }
     }
 }
