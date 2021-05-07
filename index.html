@@ -20,7 +20,8 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap-grid.css" rel="stylesheet" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
-    <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
@@ -40,7 +41,7 @@
                     type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
-                    <i class="fas fa-anchor" style="font-size: 30px; padding-top:12px;"></i>
+                    <i class="fas fa-bars" style="font-size: 30px; padding-top:12px;"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
@@ -79,7 +80,7 @@
 
                         <!-- <img alt=" " class="masthead-avatar" src="assets/img/leftprofile.png" alt=""
                         style="width:450px; max-width: 100%;" /> -->
-                        <div class="row no-margin no-padding hab grow">
+                        <div class="row no-margin no-padding hab grow" id="#equipe">
                             <div class="col-10 no-padding no-margin desc">
                                 <h3 class="habtitle">TRABALHO EM EQUIPE</h3>
                                 <span class="habdesc">Familiarizada com trabalho em equipe, sempre aberta a escutar e
@@ -91,7 +92,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="row no-margin no-padding hab grow">
+                        <div class="row no-margin no-padding hab grow" id="#comunicacao">
                             <div class="col-10 no-padding no-margin desc">
                                 <h3 class="habtitle">COMUNICAÇÃO</h3>
                                 <span class="habdesc">Pessoa comunicativa, sempre disposta a compartilhar ideias para
@@ -103,7 +104,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="row no-margin no-padding hab grow">
+                        <div class="row no-margin no-padding hab grow" id="#proatividade">
                             <div class="col-10 no-padding no-margin desc">
                                 <h3 class="habtitle">PROATIVIDADE</h3>
                                 <span class="habdesc">Boa percepção do ambiente e das situações, agindo antecipadamente
@@ -173,10 +174,11 @@
         <section class="grdnt-form" id="formacao">
             <div class="main-form">
                 <div class="row no-padding no-margin centro curso">
-                    <div class="col-12 col-md-4 text-center no-margin no-padding dzngraf grow" style="display:inline-block;">
+                    <div class="col-12 col-md-4 text-center no-margin no-padding dzngraf grow"
+                        style="display:inline-block;">
                         <div class="col-12 no-padding no-margin">
                             <button class="btn-circle grdnt-black" style="padding: 19px;" disabled>
-                                <img  src="assets/img/dzngraf.png" alt="" width="100%">
+                                <img src="assets/img/dzngraf.png" alt="" width="100%">
                             </button>
                         </div>
                         <div class="col-12 no-margin form">
@@ -184,10 +186,11 @@
                             <span class="formdesc">2019 - 2022 | UTFPR</span>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 text-center no-margin no-padding arqurb grow" style="display:inline-block;">
+                    <div class="col-12 col-md-4 text-center no-margin no-padding arqurb grow"
+                        style="display:inline-block;">
                         <div class="col-12 no-padding no-margin centro">
                             <button class="btn-circle grdnt-black" style="padding: 19px;" disabled>
-                                <img  src="assets/img/arqurb.png" alt="" width="100%">
+                                <img src="assets/img/arqurb.png" alt="" width="100%">
                             </button>
                         </div>
                         <div class="col-12 no-margin form">
@@ -195,10 +198,11 @@
                             <span class="formdesc">2020 - 2024 | Universidade Positivo</span>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 text-center no-margin no-padding dznmov grow" style="display:inline-block;">
+                    <div class="col-12 col-md-4 text-center no-margin no-padding dznmov grow"
+                        style="display:inline-block;">
                         <div class="col-12 no-padding no-margin">
                             <button class="btn-circle grdnt-black" style="padding: 19px;" disabled>
-                                <img  src="assets/img/dznmov.png" alt="" width="100%">
+                                <img src="assets/img/dznmov.png" alt="" width="100%">
                             </button>
                         </div>
                         <div class="col-12 no-margin form">
@@ -541,11 +545,28 @@
     <script src="assets/mail/jqBootstrapValidation.js"></script>
     <!-- JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/all.js"></script>
     <!--jQuery-->
     <script src="js/jquery.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
     <!--Custom Scripts-->
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.addEventListener("load", function (event) {
+            if (window.matchMedia("(max-width:767px)").matches) {
+                document.getElementById("equipe").setAttribute("data-aos", "fade-left");
+                document.getElementById("comunicacao").setAttribute("data-aos", "fade-left");
+                document.getElementById("proatividade").setAttribute("data-aos", "fade-left");
+            } else {
+                document.getElementById("equipe").setAttribute("data-aos", "fade-right");
+                document.getElementById("comunicacao").setAttribute("data-aos", "fade-right");
+                document.getElementById("proatividade").setAttribute("data-aos", "fade-right");
+            };
+        });
+    </script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
