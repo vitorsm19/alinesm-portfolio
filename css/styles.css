@@ -10354,7 +10354,7 @@ form .row:first-child .floating-label-form-group {
 
 .profile-container{
   align-items: center;
-  height: 530px!important;
+  height: 530px;
 }
 
 .lefthab > .hab > .desc {
@@ -10460,13 +10460,18 @@ padding: 0px 15px 0px 0px !important;
   }
   .proj-desc{
     color:white;
-    font-size: 18px ;
+    font-size: 14px ;
     margin-bottom: 10px !important;
   }
   .container > .navbar-collapse {
     background-color: #171717;
   }
   
+  .profile-container, .curso{
+    
+    height: auto !important;
+  }
+
   #layout{
     margin: 0px!important;
   }
