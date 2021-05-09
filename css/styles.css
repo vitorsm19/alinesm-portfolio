@@ -10469,8 +10469,11 @@ padding: 0px 15px 0px 0px !important;
   }
   
   .profile-container, .curso{
-    
     height: auto !important;
+  }
+
+  .cellprofile-xs {
+    margin-top: 40px!important;
   }
 
   #layout{
