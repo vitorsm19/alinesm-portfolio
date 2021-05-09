@@ -10376,6 +10376,7 @@ padding: 0px 15px 0px 0px !important;
   height: 210px!important;
 }
 
+
 .grdnt-black:not(.overly) {
   background: rgb(51,51,51);
   background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
