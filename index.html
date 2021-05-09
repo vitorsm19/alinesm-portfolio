@@ -555,19 +555,21 @@
     <script>
         AOS.init();
     </script>
+    
     <script>
-        window.addEventListener("load", function (event) {
+    
+        function fades() {
             if (window.matchMedia("(max-width:767px)").matches) {
                 document.getElementById("equipe").setAttribute("data-aos", "fade-left");
-                document.getElementById("comunicacao").setAttribute("data-aos", "fade-left");
-                document.getElementById("proatividade").setAttribute("data-aos", "fade-left");
             } else {
                 document.getElementById("equipe").setAttribute("data-aos", "fade-right");
-                document.getElementById("comunicacao").setAttribute("data-aos", "fade-right");
-                document.getElementById("proatividade").setAttribute("data-aos", "fade-right");
             };
-        });
+       }
+
+        window.addEventListener("load", fades);
+
     </script>
+
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
